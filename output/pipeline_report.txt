@@ -1,0 +1,49 @@
+PROJECT MANAS - DRONE IMAGE PROCESSING PIPELINE REPORT
+======================================================================
+
+STAGE 1: IMAGE STITCHING
+----------------------------------------------------------------------
+Status: SUCCESS
+Stitched Image Dimensions: 1270x948 pixels
+Output: stage1_stitched_map.png
+
+STAGE 2: BLUE MARKER DETECTION
+----------------------------------------------------------------------
+Status: SUCCESS
+Total Markers Detected: 1
+
+Marker Details:
+  Marker 0: Position (8, 397), Area 2337.0 px2
+
+Outputs:
+  - marker_coordinates.json
+  - marker_coordinates.csv
+  - annotated_map_with_markers.png
+  - yellow_mask.png
+
+STAGE 3: COSTMAP & PATH PLANNING
+----------------------------------------------------------------------
+Status: SUCCESS
+Total Paths Planned: 1
+
+Path Details:
+
+  Path 0 -> 1:
+    - Length: 282.84 pixels
+    - Average Cost: 253.73
+    - Total Waypoints: 201
+    - Est. Traversal Time: 565.69 seconds
+
+Outputs:
+  - costmap_visualization.png
+  - planned_paths.json
+  - map_with_planned_paths.png
+
+======================================================================
+PIPELINE SUMMARY
+======================================================================
+Dataset Path: ./dataset
+Output Directory: output
+Log File: output\pipeline.log
+
+All outputs successfully generated!
